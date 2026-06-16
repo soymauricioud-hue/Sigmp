@@ -1,0 +1,1403 @@
+SMGIP — Árbol documental maestro de implementaciónVersión definitiva final con definición metodológica, orden de escritura, dependencias, fases y CNVR
+
+San Cristóbal de las Casas, Chiapas
+
+I. NATURALEZA DEL ÁRBOL DOCUMENTAL
+
+El árbol documental del SMGIP no es una lista de documentos.
+
+Es una arquitectura de política pública diseñada para construir, validar, versionar e implementar un sistema municipal complejo sin improvisación, sin captura institucional y sin activación prematura de capacidades regulatorias.
+
+El árbol cumple seis funciones simultáneas:
+
+Función de ingeniería inversaPermite descomponer el documento maestro SMGIP_version_final_completa en documentos fuente, documentos derivados, instrumentos operativos y salidas por fase.
+
+Función de precedenciaDefine qué debe escribirse antes y qué no puede escribirse todavía. Las dependencias no son referencias decorativas: son reglas de desbloqueo documental.
+
+Función de control de faseDefine qué documentación mínima permite declarar Fase I, qué documentación activa Fase II y qué documentación permite declarar Fase III.
+
+Función anticapturaEvita que una persona, área, asociación, ONG, MVZ, criador, proveedor o autoridad concentre diseño, operación, validación, financiamiento, inspección y auditoría del mismo proceso.
+
+Función de trazabilidadObliga a que cada acto clínico, administrativo, financiero, territorial, sancionatorio o de egreso pueda reconstruirse desde documento, responsable, evidencia y versión.
+
+Función de uso controlado de IAPermite usar IA como herramienta de fragmentación, clasificación, auditoría, redacción asistida y verificación, sin que la IA invente estructura, active documentos no desbloqueados o confunda salidas de presentación con documentos fuente.
+
+II. REGLA MATRIZ
+
+El árbol debe leerse con esta regla:
+
+Si un documento define una regla, se escribe antes.Si un documento aplica una regla, se escribe después.Si un documento mide una regla, se escribe después de la operación mínima.Si un documento sanciona una regla, se escribe solo cuando ya existen la regla, el dato, el procedimiento, la autoridad y la evidencia.
+
+III. DOCUMENTO FUENTE CANÓNICO
+
+El documento fuente canónico es:
+
+SMGIP_version_final_completa
+
+De este documento se extraen, por ingeniería inversa, los documentos 0.1, 0.2, 0.3, etc.
+
+El repositorio Git no inicia como un espacio vacío. Inicia como un repositorio de fragmentación y trazabilidad del documento fuente canónico.
+
+La primera tarea no es redactar documentos nuevos.La primera tarea es mapear el documento maestro hacia el árbol documental.
+
+IV. DEFINICIONES OBLIGATORIAS DEL ÁRBOL
+
+Documento maestroEs el documento fuente canónico. Contiene la visión integrada del sistema. No se trata como borrador suelto ni como texto inspiracional. Es la fuente de verdad inicial.
+
+Documento fuenteDocumento que define reglas, conceptos, criterios, fases, estructura, autoridad o metodología. Otros documentos dependen de él.
+
+Documento derivadoDocumento que toma reglas de documentos fuente y las adapta para un uso específico: operación, auditoría, campo, cabildo, ONG, ciudadanía, capacitación o convenio.
+
+InstrumentoFormato, acta, checklist, bitácora, constancia, licencia, ficha o plantilla. No define política pública; ejecuta una regla ya definida.
+
+DependenciaCondición que determina si un documento puede escribirse. Si la dependencia no existe o no está estable, el documento dependiente solo puede tener ficha, índice y criterios de desbloqueo.
+
+Dependencia duraDocumento sin el cual otro no puede escribirse de forma sustantiva.
+
+Dependencia jurídicaDocumento que permite validar obligaciones, sanciones, licencias, inspecciones o facultades.
+
+Dependencia operativaDocumento que permite ejecutar un proceso en campo, clínica, UCR, campaña, CNVR o inspección.
+
+Dependencia analíticaDocumento o dato necesario para medir, priorizar, auditar o cerrar fase.
+
+Documento mínimo de faseDocumento suficiente para arrancar una fase, aunque no sea su versión completa.
+
+Documento completoDocumento desarrollado con todos sus componentes, aplicable ordinariamente dentro de la fase que corresponde.
+
+Capacidad habilitadaAcción que el sistema ya puede ejecutar porque tiene documentos, autoridad, datos, responsables y evidencia mínima.
+
+Capacidad prohibida por cierre prematuroAcción que no puede activarse todavía porque faltan documentos habilitantes.
+
+MIVSMinimum Institutional Viable System. Es el núcleo institucional mínimo viable. No reemplaza al sistema completo; permite iniciar Fase I sin romper trazabilidad, bienestar, gobernanza, datos ni auditoría.
+
+CNVRMetodología territorial de Captura, Neutralización/Esterilización, Vacunación y Retorno. En el SMGIP no significa “capturar, operar y soltar”. Significa captura humanitaria, valoración clínica, identificación o prealta, esterilización cuando proceda, vacunación, registro RUAM, evaluación conductual y territorial, retorno georreferenciado o ruta alternativa, seguimiento y auditoría.
+
+Retorno territorial responsableDecisión técnica documentada que permite devolver un animal comunitario a su territorio solo si cumple criterios de salud, conducta, bienestar, vacunación, esterilización cuando proceda, identificación, georreferencia, seguimiento y aceptación o viabilidad territorial.
+
+PrealtaRegistro temporal justificado para animales aún no plenamente integrados. No equivale a alta plena. La alta plena requiere identificación primaria, validación sanitaria y expediente RUAM.
+
+Alta plenaCondición de integración completa al SMGIP: microchip, RUAM, estatus sanitario, responsable o categoría operativa, evidencia y validación.
+
+Estado documentalNivel de madurez de un documento dentro del árbol.
+
+Release de faseCorte documental versionado que permite decir: “con estos documentos, esta fase puede iniciar o avanzar”.
+
+V. ESTADOS DE MADUREZ DOCUMENTAL
+
+E0 — No desbloqueadoEl documento todavía no debe escribirse. Solo puede existir ficha, propósito y dependencias.
+
+E1 — Esqueleto permitidoPuede tener índice, alcance tentativo, preguntas pendientes y criterios de desbloqueo.
+
+E2 — Borrador preliminarPuede redactarse parcialmente porque sus dependencias existen en borrador.
+
+E3 — Borrador sustantivoPuede desarrollarse completo porque sus dependencias están en versión mínima estable.
+
+E4 — Revisión técnica, jurídica, operativa o financieraPuede auditarse contra sus documentos habilitantes.
+
+E5 — Versión activaPuede usarse para implementación, derivación, formatos, capacitación o fase.
+
+VI. ORDEN DE ESCRITURA POR INGENIERÍA INVERSA
+
+El orden de escritura no sigue la numeración 0–29 de forma plana. Sigue el orden de desbloqueo.
+
+Etapa 0 — Mapeo del documento maestroPrimero se escribe:0.15 Matriz de fragmentación del documento maestro hacia documentos derivados15.19 Mapa de trazabilidad fragmento-documento desde SMGIP final26.21 Mapeo inicial desde SMGIP final hacia documentos 0–29
+
+Etapa 1 — Núcleo rector0.1–0.16
+
+Etapa 2 — Control documental, IA y versionado15.0, 15.1, 15.2, 15.3, 15.8, 15.9, 15.12, 15.15, 15.16, 15.17, 15.20
+
+Etapa 3 — Marco jurídico mínimo1.9, 1.1, 1.2, 1.5, 1.8, 1.10, 1.11, 1.12, 1.15, 1.16
+
+Etapa 4 — Gobernanza mínima y anticaptura2.1–2.6, 2.8–2.10, 2.14–2.16
+
+Etapa 5 — RUAM, microchip y trazabilidad3.17, 3.9, 3.1, 3.2, 3.5, 3.7, 3.8, 3.10, 3.11, 3.13, 3.16, 3.18, 3.20
+
+Etapa 6 — Ontología mínima16.0, 16.1, 16.4, 16.5, 16.11, 16.14–16.17
+
+Etapa 7 — Clínica mínima y bienestar mínimo4.1, 4.15, 4.5, 4.3, 4.4, 4.6–4.10, 4.16, 4.175.1–5.4, 5.16–5.19, 5.9, 5.10, 5.12
+
+Etapa 8 — Operación territorial, campañas y CNVR6.1–6.14, 6.16–6.20
+
+Etapa 9 — UCR mínima7.0–7.3, 7.6, 7.9, 7.10, 7.12, 7.16
+
+Etapa 10 — Finanzas mínimas y cofinanciación9.1, 9.3, 9.4, 9.6, 9.9–9.13, 9.16, 9.17, 9.19–9.21
+
+Etapa 11 — Monitoreo mínimo y KPIs11.0–11.3, 11.5, 11.6, 11.10, 11.11, 11.13, 11.15, 11.17–11.20
+
+Etapa 12 — Arquitectura de fases14.1, 14.4, 14.5, 14.7, 14.8, 14.11, 14.12, 14.16, 14.17
+
+Etapa 13 — Implementación real y MIVS26.1–26.4, 26.7, 26.9–26.11, 26.13, 26.15, 26.17, 26.20–26.2227.1–27.25
+
+Etapa 14 — Formatos mínimos28.1, 28.6, 28.7, 28.9, 28.10, 28.14–28.20, 28.26–28.29, 28.31–28.37
+
+Etapa 15 — Comunicación e integraciones mínimas12.1, 12.2, 12.6, 12.8–12.10, 12.13, 12.14, 12.17, 12.1813.1, 13.6, 13.7, 13.10, 13.14, 13.15, 13.19
+
+Etapa 16 — Repositorio institucional mínimo29.0, 29.2, 29.3, 29.11, 29.12, 29.15, 29.19, 29.20
+
+Etapa 17 — Readiness de Fase I26.17 Criterios de arranque de Fase I14.8 Matriz de capacidades prohibidas por cierre prematuro27.19 Criterios mínimos para declarar arranque de Fase I
+
+VII. ÁRBOL DOCUMENTAL MAESTRO DEFINITIVO
+
+NÚCLEO CONSTITUCIONAL, SEMÁNTICO Y DOCTRINAL DEL SISTEMA
+
+0.1 Documento maestro / Propuesta técnica unificadaDefine la visión completa del SMGIP. Es el documento fuente canónico.
+
+0.2 Exposición de motivosJustifica por qué el municipio debe crear el sistema.
+
+0.3 Teoría de cambioExplica cómo el sistema transforma rezago, abandono, reproducción no controlada y falta de trazabilidad en regulación sostenible.
+
+0.4 Alcance, principios y fasesDefine qué cubre el sistema, qué no cubre, sus principios rectores y sus tres fases.
+
+0.5 Glosario maestro y taxonomía operativaFija lenguaje obligatorio para evitar ambigüedad jurídica, técnica y operativa.
+
+0.6 Matriz de dependencias documentalesDefine qué documento desbloquea a otro.
+
+0.7 Matriz de cambios entre borrador y versión finalEvita que el árbol conserve sesgos del borrador anterior.
+
+0.8 Matriz de fuentes técnicas, jurídicas y científicas convertidas en requisitosConvierte fuentes en requisitos por módulo.
+
+0.9 Reglas de desbloqueo documental por faseDefine cuándo un documento puede pasar de ficha a borrador sustantivo.
+
+0.10 Criterios de validez del sistemaLegalidad, bienestar, trazabilidad, auditabilidad, anticaptura y sostenibilidad.
+
+0.11 Principios innegociables del SMGIPDefine límites que ningún módulo puede contradecir.
+
+0.12 Matriz de decisiones fundacionalesDocumenta por qué se adoptaron las decisiones estructurales.
+
+0.13 Metodología CNVR dentro del SMGIPDefine CNVR como metodología territorial, no como simple campaña.
+
+0.14 Principios de retorno territorial responsableDefine condiciones para retorno, no retorno y seguimiento.
+
+0.15 Matriz de fragmentación del documento maestro hacia documentos derivadosMapea el SMGIP final hacia el árbol 0–29.
+
+0.16 Criterios para documentos fuente, derivados y documentos de faseEvita confundir documentos rectores con salidas o formatos.
+
+Dependencias: ninguna.Condición Fase I: completo en versión mínima estable.Habilita: todos los módulos.
+
+MARCO JURÍDICO-NORMATIVO
+
+1.1 Reglamento municipal SMGIPTraduce el sistema a norma municipal.
+
+1.2 Bando / disposición administrativa de aplicaciónPermite iniciar operación institucional cuando el reglamento completo aún está en desarrollo.
+
+1.3 Tabulador de infracciones y sancionesDefine conductas, gravedad y consecuencias.
+
+1.4 Régimen de licencias y permisosRegula criadores, asociaciones, prestadores, pet friendly y actividades relacionadas.
+
+1.5 Facultades de inspección y verificaciónDefine qué puede verificar la autoridad y bajo qué límites.
+
+1.6 Procedimiento administrativo sancionadorGarantiza legalidad, defensa, prueba, resolución y recurso.
+
+1.7 Convenios de coordinación interinstitucionalFormaliza cooperación con salud pública, universidades, ONGs, turismo, clínicas y otros actores.
+
+1.8 Compatibilidad estatal y federalAlinea el sistema con normas superiores.
+
+1.9 Dictamen de figura institucionalDefine si nace como instituto, dirección, coordinación, OPD, fondo, fideicomiso o figura equivalente.
+
+1.10 Matriz de vigencia normativa y cautelas jurídicasEvita citar normas canceladas o no vigentes como fundamento.
+
+1.11 Reglas jurídicas de transición asistencial-regulatoriaPermite pasar de facilidades iniciales a obligaciones progresivas.
+
+1.12 Protección de datos personalesRegula RUAM, microchip, QR, reportes y consultas.
+
+1.13 Marco jurídico de actores externosDefine animales comunitarios, visitantes, criadores, asociaciones y prestadores.
+
+1.14 Uso de antecedentes normativos no vigentesPermite usarlos como insumo técnico, no como norma vigente.
+
+1.15 Marco jurídico-operativo del CNVRDa base jurídica a captura, intervención, retorno y seguimiento.
+
+1.16 Reglas de retorno territorial y no retornoDefine cuándo se permite o prohíbe retorno.
+
+Dependencias: 0.1–0.16.Fase I: 1.1, 1.2, 1.5, 1.8–1.12, 1.15, 1.16.Fase II: 1.3, 1.4, 1.6, 1.7, 1.13, 1.14.Habilita: autoridad, inspección, licencias, CNVR, datos, sanción futura y exigibilidad.
+
+GOBERNANZA Y ESTRUCTURA INSTITUCIONAL
+
+2.1 Institución albergante u órgano rector municipalDefine dónde vive institucionalmente el SMGIP.
+
+2.2 Organigrama funcionalDistribuye unidades y relaciones.
+
+2.3 Matriz RACIAclara responsable, aprobador, consultado e informado.
+
+2.4 Flujos de decisión y escalamientoDefine cómo se toman decisiones ordinarias y críticas.
+
+2.5 Comité técnico multidisciplinarioAsegura revisión técnica y pluralidad controlada.
+
+2.6 Separación funcional y prevención de capturaImpide concentración de operación, validación, financiamiento, inspección y auditoría.
+
+2.7 Reglamento interno de operaciónNorma funcionamiento del órgano rector.
+
+2.8 Dirección Técnica fundacional o ejecutivaConvierte visión en documentos, protocolos, indicadores y transferencia.
+
+2.9 Matriz anticapturaRegula intereses, recusación, rotación, auditoría, impugnación y trazabilidad decisional.
+
+2.10 Conflicto de interésAplica a MVZ, criadores, ONGs, asociaciones, proveedores, funcionarios y actores fundacionales.
+
+2.11 Revisión externa o comité independientePermite control técnico externo.
+
+2.12 Publicación de criterios generalesHace verificables las decisiones.
+
+2.13 Sucesión técnica y transferencia institucionalEvita dependencia de una persona.
+
+2.14 Participación fundacional sin autoevaluaciónPermite participar sin capturar beneficios o decisiones.
+
+2.15 Gobernanza del CNVRDefine quién captura, quién opera, quién valida, quién decide retorno y quién audita.
+
+2.16 Separación funcional CNVREvita que quien captura sea quien decide retorno sin revisión.
+
+Dependencias: 0.1–0.16, 1.1–1.16.Fase I: 2.1–2.6, 2.8–2.10, 2.14–2.16.Fase II: 2.7, 2.11–2.13.Habilita: operación, datos, clínica, finanzas, CNVR y anticaptura.
+
+SISTEMA DE INFORMACIÓN, MICROCHIP Y TRAZABILIDAD
+
+3.1 RUAM — especificación funcionalDefine el expediente maestro.
+
+3.2 Diccionario de datosDefine campos, tipos, reglas y obligatoriedad.
+
+3.3 ESCMDefine estatus sanitario y de control.
+
+3.4 QR y reglas de consultaDefine interfaz visible, sin sustituir microchip ni RUAM.
+
+3.5 Validación de registrosDefine quién valida y cómo.
+
+3.6 Corrección, bajas y auditoría de datosEvita duplicidades, errores y manipulación.
+
+3.7 Captura y resguardo de evidenciaDefine evidencia documental, fotográfica, clínica y territorial.
+
+3.8 Seguridad, acceso y rolesControla quién ve, edita y valida.
+
+3.9 Estándar técnico de microchipDefine identificador primario, lector, implantación y compatibilidad.
+
+3.10 Implantación, lectura, fallas y duplicidadesRegula contingencias del identificador.
+
+3.11 Prealta temporalPermite entrada asistencial sin declarar alta plena.
+
+3.12 Animales comunitarios, visitantes y sin identificaciónDefine rutas especiales.
+
+3.13 Protección de datos y consulta limitadaEvita exposición indebida.
+
+3.14 Interoperabilidad futuraPrepara conexión con clínicas, UCR, inspección, hoteles y asociaciones.
+
+3.15 Transferencia de tutor, custodia, venta, cesión, adopción y egresoEvita cambios sin trazabilidad.
+
+3.16 Integridad de datos y responsable de capturaDa responsabilidad documental.
+
+3.17 Jerarquía microchip–RUAM–ESCM–QRDefine la arquitectura de identidad.
+
+3.18 Registro CNVR en RUAMIncluye captura, intervención, retorno, no retorno y seguimiento.
+
+3.19 Estados CNVR dentro del ESCMPermite saber si está capturado, intervenido, retornado, no apto o en seguimiento.
+
+3.20 Datos obligatorios CNVRDefine campos mínimos para que CNVR sea auditable.
+
+Dependencias: 0.5, 0.13, 0.14, 1.1, 1.12, 2.1, 2.3, 2.6.Fase I: 3.1, 3.2, 3.5, 3.7–3.11, 3.13, 3.16–3.18, 3.20.Fase II: 3.3, 3.4, 3.6, 3.12, 3.14, 3.15, 3.19.Habilita: trazabilidad, clínica, campañas, CNVR, UCR, inspección, auditoría y cierre del sistema.
+
+MÓDULO CLÍNICO VETERINARIO ACREDITADO
+
+4.1 Criterios de acreditación de MVZDefine quién puede operar actos clínicos del sistema.
+
+4.2 Protocolos preoperatoriosDefine evaluación clínica previa.
+
+4.3 Protocolos anestésicos y analgésicosProtege bienestar y seguridad.
+
+4.4 Protocolos quirúrgicos HQHVSNPermite alto volumen sin sacrificar calidad.
+
+4.5 Protocolos de vacunaciónDefine esquema, lote, responsable, vigencia y registro.
+
+4.6 Recuperación y egreso clínicoDefine cuándo un animal puede salir.
+
+4.7 Farmacovigilancia y cadena de fríoControla insumos y biológicos.
+
+4.8 Formatos clínicos obligatoriosInstrumenta la evidencia.
+
+4.9 Expediente clínico mínimoPermite consulta, auditoría y seguimiento.
+
+4.10 Registro clínico en RUAMVincula acto médico con expediente maestro.
+
+4.11 Auditoría clínica de campañaPermite revisar calidad y complicaciones.
+
+4.12 Responsabilidad profesional y conflicto de interésEvita validación clínica opaca.
+
+4.13 MVZ responsable de criaderoAcompaña sin sustituir inspector ni autoridad.
+
+4.14 Suspensión, recertificación o exclusión de MVZRegula consecuencias por incumplimiento.
+
+4.15 Evidencia clínica mínimaDefine lote, fármaco, procedimiento, responsable y seguimiento.
+
+4.16 Aptitud o no aptitud para CNVRDefine si un animal puede retornar.
+
+4.17 Recuperación y egreso para retorno CNVREvita retorno posquirúrgico inseguro.
+
+Dependencias: 0.1–0.16, 2.1–2.16, 3.1–3.20, 5.1–5.4.Fase I: 4.1, 4.3–4.10, 4.15–4.17.Fase II: 4.2, 4.11–4.14.Habilita: vacunación, esterilización, CNVR, campañas, bienestar y auditoría clínica.
+
+BIENESTAR ANIMAL COMO CRITERIO DE VALIDEZ
+
+5.1 Política municipal de bienestar animalDefine bienestar como condición de validez.
+
+5.2 Estándares mínimos de manejoAplica a todos los módulos.
+
+5.3 Escalas de estrés, dolor y miedoPermite medir sufrimiento.
+
+5.4 Captura humanitariaCondiciona captura, CNVR e inspección.
+
+5.5 Custodia y alojamientoAplica a UCR, asociaciones y prestadores.
+
+5.6 Límites de hacinamientoEvita acumulación y daño.
+
+5.7 Retorno, adopción y egresoDefine egreso válido.
+
+5.8 Eutanasia excepcionalSolo como último recurso conforme a norma aplicable.
+
+5.9 Auditoría de bienestarVerifica cumplimiento.
+
+5.10 Checklist de bienestar por móduloInstrumenta control.
+
+5.11 Indicadores de bienestarPermite medición.
+
+5.12 Invalidez operativa por incumplimientoAnula actos que violen bienestar.
+
+5.13 Bienestar en criadoresCondiciona tecnificación ética.
+
+5.14 Bienestar en asociaciones y refugiosEvita acumulación sin salida.
+
+5.15 Bienestar en pet friendlyRegula hoteles, restaurantes, guarderías, paseadores y transporte.
+
+5.16 Bienestar en animales comunitarios y retorno territorialCondiciona manejo territorial.
+
+5.17 Bienestar animal en CNVRDefine bienestar específico de la metodología.
+
+5.18 Criterios de no retornoImpide retorno por salud, conducta, sufrimiento o territorio inadecuado.
+
+5.19 Bienestar durante captura, transporte, espera, cirugía, recuperación y retorno CNVRCierra la cadena completa.
+
+Dependencias: 0.1–0.16, 4.1–4.17.Fase I: 5.1–5.4, 5.9, 5.10, 5.12, 5.16–5.19.Fase II: 5.5–5.8, 5.11, 5.13–5.15.Habilita: validez de campañas, CNVR, UCR, asociaciones, criadores, pet friendly e inspección.
+
+OPERACIÓN TERRITORIAL, CAMPAÑAS Y CNVR
+
+6.1 Planeación territorialDefine dónde y cómo intervenir.
+
+6.2 Línea base poblacionalPermite medir la realidad inicial.
+
+6.3 Priorización de zonasDefine criterios para ordenar intervención.
+
+6.4 Campañas calendarizadasOrganiza acciones intensivas.
+
+6.5 Logística de jornadaDefine operación material.
+
+6.6 Cadena fría, insumos y transporteProtege biológicos, fármacos y seguridad.
+
+6.7 Filas, convocatorias y atenciónOrdena interacción ciudadana.
+
+6.8 Cierre, reporte y transferencia a RUAMHace oficial la campaña.
+
+6.9 Campañas como expediente completoCada campaña debe tener evidencia, costos, responsables y resultados.
+
+6.10 Entrada asistencial-reguladaConvierte asistencia en expediente y obligación futura.
+
+6.11 Costos por jornada, animal, procedimiento, insumo y zonaPermite transparencia financiera.
+
+6.12 Reporte posterior y no conformidadesCierra auditoría operativa.
+
+6.13 Animales no aptos temporalmenteEvita procedimientos inseguros.
+
+6.14 Seguimiento, revaloración y cierreEvita casos abiertos.
+
+6.15 Campañas focalizadasSustituye progresivamente campañas masivas.
+
+6.16 Campaña externa sin efectos SMGIP sin RUAMImpide acciones paralelas no reconstruibles.
+
+6.17 Metodología CNVR como modalidad de campaña territorialIntegra CNVR formalmente.
+
+6.18 Protocolo operativo CNVRDefine captura, clínica, registro, retorno y seguimiento.
+
+6.19 Selección territorial para CNVRDefine dónde procede.
+
+6.20 CNVR dentro de campañas de esterilizaciónDistingue campaña con tutor de campaña comunitaria CNVR.
+
+Dependencias: 0.1–0.16, 3.1–3.20, 4.1–4.17, 5.1–5.19, 9.1–9.13.Fase I: 6.1–6.14, 6.16–6.20.Fase II: 6.15.Habilita: masa crítica, RUAM, línea base, CNVR, subsidio, KPIs y transición.
+
+UNIDAD DE CUSTODIA Y RESGUARDO, UCR
+
+7.0 UCR mínima operativaDefine el mínimo de resguardo legal-sanitario.
+
+7.1 Definición jurídica de UCRDistingue UCR de refugio o perrera.
+
+7.2 RecepciónRegula ingreso.
+
+7.3 ClasificaciónDetermina ruta.
+
+7.4 AlojamientoRegula estancia.
+
+7.5 ObservaciónAplica a salud, conducta o procedimiento.
+
+7.6 EgresoDefine salida válida.
+
+7.7 Abandono, decomiso y resguardo temporalRegula casos especiales.
+
+7.8 Residuos, bioseguridad y contingenciasProtege salud pública.
+
+7.9 Evidencia RUAM de ingreso, permanencia y egresoEvita egresos opacos.
+
+7.10 Límites de capacidadEvita custodia indefinida.
+
+7.11 Bienestar y auditoría UCRCondiciona operación.
+
+7.12 Adopción, devolución, retorno o transferenciaDefine rutas de salida.
+
+7.13 Procedimiento administrativo o judicialRegula casos bajo autoridad.
+
+7.14 Permanencia máxima y revisiónEvita acumulación.
+
+7.15 SaturaciónDefine contingencias.
+
+7.16 Derivación CNVR-UCRDefine cuándo un animal CNVR no retorna.
+
+7.17 Egreso desde UCR hacia CNVR o retorno condicionadoPermite retorno posterior solo si cumple criterios.
+
+Dependencias: 0.1–0.16, 1.1, 3.1–3.20, 4.1–4.17, 5.1–5.19.Fase I: 7.0–7.3, 7.6, 7.9, 7.10, 7.12, 7.16.Fase II: 7.4, 7.5, 7.7, 7.8, 7.11, 7.13–7.15, 7.17.Habilita: custodia, decomiso, abandono, CNVR no retornable y egreso trazable.
+
+INSPECCIÓN, CONTROL Y CUMPLIMIENTO
+
+8.0 Inspección limitada inicialPermite verificación sin sanción plena.
+
+8.1 Manual de inspección en campoDefine inspección operativa.
+
+8.2 Actas y requerimientosInstrumenta evidencia.
+
+8.3 Criterios de infracciónDefine incumplimientos.
+
+8.4 Medidas correctivasPermite regularizar.
+
+8.5 Medidas cautelaresPermite prevenir daño.
+
+8.6 Cadena probatoriaProtege legalidad.
+
+8.7 Escalamiento sancionatorioGradúa consecuencias.
+
+8.8 Reincidencia y revocaciónCierra evasión persistente.
+
+8.9 Inspección de criadores, asociaciones, UCR, MVZ y pet friendlyAplica al ecosistema externo.
+
+8.10 Impugnación y revisiónProtege defensa y anticaptura.
+
+8.11 Tablero de cumplimientoMide reincidencia.
+
+8.12 Inspección por riesgoPrioriza según salud, bienestar, reproducción o territorio.
+
+8.13 Inspección con microchip y RUAMAncla verificación.
+
+8.14 Separación entre inspección, clínica, datos y sanciónEvita captura.
+
+8.15 Regularización antes de sanción plenaAplica durante transición.
+
+8.16 Verificación de retornos CNVRControla seguimiento territorial.
+
+8.17 Infracción por retorno no autorizado o ruptura CNVRSanciona mal uso de CNVR.
+
+Dependencias: 1.1–1.6, 2.1–2.16, 3.1–3.20, 5.1–5.19.Fase I: 8.0, 8.13–8.16.Fase II: 8.1–8.12, 8.17.Habilita: cumplimiento, licencias, control externo, CNVR verificable y sanción futura.
+
+FINANZAS, SOSTENIBILIDAD Y COFINANCIACIÓN
+
+9.1 Modelo financiero del sistemaDefine sostenibilidad.
+
+9.2 Vehículo financiero independienteBlindaje de recursos.
+
+9.3 Ingresos etiquetadosEvita dispersión.
+
+9.4 Subsidio inicialPermite entrada asistencial.
+
+9.5 Copago gradualTransición financiera.
+
+9.6 Reinversión exclusivaEvita captura presupuestal.
+
+9.7 Control presupuestal por rubroOrdena gasto.
+
+9.8 Auditoría financieraVerifica uso.
+
+9.9 Ventanas de cofinanciaciónDefine líneas financiables.
+
+9.10 Aportaciones monetarias y en especieRegula donaciones.
+
+9.11 Origen, destino, indicador, responsable y evidenciaDa trazabilidad.
+
+9.12 Transparencia de costosPublica costos por campaña, procedimiento y rubro.
+
+9.13 Límites anticaptura financieraEvita que el donante controle decisiones.
+
+9.14 Subsidio focalizadoReduce asistencialismo permanente.
+
+9.15 Auditoría de subsidios y copagosControla transición.
+
+9.16 Costeo mínimoMicrochip, lectores, biológicos, cirugía, software, UCR y auditoría.
+
+9.17 Financiamiento por ventana sin transferencia de rectoríaPermite apoyo sin captura.
+
+9.18 Reporte financiero públicoRinde cuentas.
+
+9.19 Rechazo de aportes incompatiblesProtege independencia.
+
+9.20 Costeo CNVRIncluye captura, traslado, cirugía, vacuna, identificación, retorno y seguimiento.
+
+9.21 Ventanas de cofinanciación CNVRPermite financiar CNVR de forma trazable.
+
+Dependencias: 0.1–0.16, 1.1–1.7, 2.1–2.16.Fase I: 9.1, 9.3, 9.4, 9.6, 9.9–9.13, 9.16, 9.17, 9.19–9.21.Fase II: 9.2, 9.5, 9.7, 9.8, 9.14, 9.15, 9.18.Habilita: subsidio, campañas, CNVR, cofinanciación, auditoría y sostenibilidad.
+
+CAPACITACIÓN, CERTIFICACIÓN Y HOMOLOGACIÓN
+
+10.1 Plan de capacitación por actorDefine quién aprende qué.
+
+10.2 Malla MVZHomologa red clínica.
+
+10.3 Malla de inspecciónHomologa verificadores.
+
+10.4 Malla UCRHomologa custodia.
+
+10.5 Certificación inicialAutoriza participación.
+
+10.6 RecertificaciónMantiene calidad.
+
+10.7 RevocaciónRetira autorización por incumplimiento.
+
+10.8 Homologación técnicaUnifica criterios.
+
+10.9 Tecnificación ética de criadoresRegulariza reproducción autorizable.
+
+10.10 Capacitación de asociacionesEvita rescate sin trazabilidad.
+
+10.11 Capacitación pet friendlyRegula prestadores.
+
+10.12 RUAM, microchip, evidencia y protección de datosEvita registros inválidos.
+
+10.13 Bienestar por rolAterriza bienestar operativo.
+
+10.14 Costos, subsidios y trazabilidad financieraEvita mal uso de recursos.
+
+10.15 Tutores y entrada asistencial-reguladaConvierte acceso en corresponsabilidad.
+
+10.16 InspectoresCadena probatoria, trato ciudadano y separación funcional.
+
+10.17 ONGs y aliadosCofinanciación sin captura.
+
+10.18 Capacitación CNVRCaptura, manejo, registro, retorno y seguimiento.
+
+10.19 Capacitación comunitaria CNVRAnimales comunitarios y retorno responsable.
+
+Dependencias: 0.1–0.16, 2.1–2.16, 3.1–3.20, 4.1–4.17, 5.1–5.19, 8.1–8.17.Fase I: mínimos por actor crítico.Fase II: certificación completa.Habilita: consistencia, profesionalización, CNVR seguro y reducción de simulación.
+
+MONITOREO, AUDITORÍA Y EVALUACIÓN
+
+11.0 Marco mínimo de evaluación de Fase IDefine qué medir desde el inicio.
+
+11.1 Línea basePunto cero.
+
+11.2 KPIs institucionalesMiden funcionamiento.
+
+11.3 KPIs clínicosMiden calidad veterinaria.
+
+11.4 KPIs territorialesMiden cobertura y cambio.
+
+11.5 KPIs financierosMiden recursos.
+
+11.6 KPIs de bienestarMiden sufrimiento, manejo y cumplimiento.
+
+11.7 Auditoría internaCorrige operación.
+
+11.8 Auditoría externaDa credibilidad.
+
+11.9 Mejora continuaTraduce hallazgos en cambios.
+
+11.10 KPIs de cofinanciaciónMiden aportes y destino.
+
+11.11 KPIs de entrada asistencial-reguladaMiden incorporación.
+
+11.12 KPIs de actores externosCriadores, asociaciones, pet friendly y visitantes.
+
+11.13 Umbrales de transiciónDefine paso de fase.
+
+11.14 No conformidades y acciones correctivasCierra errores.
+
+11.15 KPIs de microchip y prealtaMiden trazabilidad.
+
+11.16 KPIs de cierre de reposiciónMiden control reproductivo.
+
+11.17 KPIs de eficiencia de campañaCosto, cobertura y resultado.
+
+11.18 KPIs anticapturaMiden conflictos e independencia.
+
+11.19 KPIs CNVRCaptura, intervención, retorno, no retorno, seguimiento e impacto territorial.
+
+11.20 Auditoría de retorno CNVREvita retorno automático o simulación.
+
+Dependencias: 3.1–3.20, 4.1–4.17, 5.1–5.19, 6.1–6.20, 7.1–7.17, 8.1–8.17, 9.1–9.21.Fase I: 11.0–11.3, 11.5, 11.6, 11.10, 11.11, 11.13, 11.15, 11.17–11.20.Fase II: 11.4, 11.7, 11.9, 11.12, 11.14, 11.16.Fase III: 11.8 permanente.Habilita: transición, auditoría, corrección, CNVR verificable y reportes.
+
+COMUNICACIÓN PÚBLICA Y LEGITIMIDAD SOCIAL
+
+12.1 Estrategia de adopción ciudadanaFacilita entrada social.
+
+12.2 Mensajes por actorAdapta lenguaje.
+
+12.3 Preguntas frecuentesReduce ambigüedad.
+
+12.4 Manejo de controversiasPreviene crisis.
+
+12.5 Transparencia y reportes públicosRinde cuentas.
+
+12.6 Tenencia responsableEduca.
+
+12.7 Reportes de impactoDemuestra resultados.
+
+12.8 Asistencia inicial no laxaExplica que la ayuda genera expediente y obligación futura.
+
+12.9 Bienestar como criterio de validezComunica límite ético.
+
+12.10 Subsidio temporal y corresponsabilidadPrepara copagos y obligaciones.
+
+12.11 Criadores regularizables y no aptosExplica transición.
+
+12.12 Turismo, visitantes y pet friendlyRegula economía animal.
+
+12.13 Microchip, RUAM, prealta, alta plena y QREvita confusión tecnológica.
+
+12.14 Cofinanciación trazableDa confianza a aliados.
+
+12.15 Asociaciones y refugiosExplica rescate con trazabilidad.
+
+12.16 Cambios de faseComunica nuevas obligaciones.
+
+12.17 Comunicación comunitaria CNVRExplica captura, retorno y seguimiento.
+
+12.18 Retorno territorial responsable y no retornoEvita percepción de “soltar animales”.
+
+Dependencias: 0.1–0.16, 1.1–1.4, 9.1–9.21, 11.0–11.20.Fase I: 12.1, 12.2, 12.6, 12.8–12.10, 12.13, 12.14, 12.17, 12.18.Fase II: 12.3–12.5, 12.7, 12.11, 12.12, 12.15, 12.16.Habilita: legitimidad, adhesión, transición y CNVR socialmente defendible.
+
+INTEGRACIONES EXTERNAS
+
+13.1 Salud públicaVincula zoonosis y prevención.
+
+13.2 TurismoRegula impacto turístico.
+
+13.3 SeguridadCoordina riesgos y reportes.
+
+13.4 Desarrollo socialPermite subsidio focalizado.
+
+13.5 Asociaciones civilesIntegra rescate trazable.
+
+13.6 UniversidadesApoya línea base, capacitación y evaluación.
+
+13.7 Clínicas privadasExpande red MVZ.
+
+13.8 LaboratoriosApoya diagnóstico.
+
+13.9 Protección civilInterviene en contingencias.
+
+13.10 ONGs y fundacionesCofinanciación trazable.
+
+13.11 Hoteles, restaurantes y pet friendlyIntegra economía animal.
+
+13.12 Colegios veterinariosHomologación técnica.
+
+13.13 Auditoría externaCredibilidad.
+
+13.14 Servicio social e investigaciónLínea base y seguimiento.
+
+13.15 Microchip, lectores, software, biológicos, capacitación o auditoríaConvenios por ventana.
+
+13.16 Prestadores turísticos y animales visitantesRegistro temporal.
+
+13.17 Asociaciones y refugiosRegularización.
+
+13.18 Criadores regularizablesTecnificación ética.
+
+13.19 Acuerdos comunitarios CNVRSeguimiento territorial.
+
+Dependencias: 0.1–0.16, 1.7, 2.1–2.16, 9.9–9.21, 11.0–11.20.Fase I: salud, universidades, MVZ, ONGs y comunidad CNVR si aplica.Fase II: convenios operativos completos.Habilita: capacidad técnica, legitimidad, cofinanciación, CNVR y expansión.
+
+IMPLEMENTACIÓN POR FASES
+
+14.1 Fase I — Arranque asistencial trazableDefine arranque mínimo.
+
+14.2 Fase II — Consolidación regulatoriaDefine regulación progresiva.
+
+14.3 Fase III — Exigibilidad plenaDefine madurez regulatoria.
+
+14.4 Umbrales de transiciónCondiciones para pasar de fase.
+
+14.5 Criterios de cierre de faseDefine cuándo una fase se cierra.
+
+14.6 EscalamientoExpansión territorial y modular.
+
+14.7 Capacidades habilitadas por faseQué puede hacerse.
+
+14.8 Capacidades prohibidas por cierre prematuroQué no puede activarse.
+
+14.9 Activación de licencias, sanciones, QR, copagos e inspección plenaEvita adelantos.
+
+14.10 Madurez y cierre regulatorioCondiciones de Fase III.
+
+14.11 Publicación y versionado de transiciónHace trazable el cambio.
+
+14.12 Documentación mínima por faseDefine release documental.
+
+14.13 Documentación completa por faseDefine madurez documental.
+
+14.14 Retroceso, pausa o correcciónPermite no avanzar si hay fallas.
+
+14.15 Escalamiento territorialDefine expansión.
+
+14.16 Activación CNVR por faseDefine CNVR piloto, territorial y de mantenimiento.
+
+14.17 Paso de CNVR piloto a CNVR territorial reguladoEvita masificación prematura.
+
+Dependencias: 0.1–0.16.Fase I: 14.1, 14.4, 14.5, 14.7, 14.8, 14.11, 14.12, 14.16, 14.17.Fase II: 14.2, 14.6, 14.9, 14.13, 14.14.Fase III: 14.3, 14.10, 14.15.Habilita: control de fase, no activación prematura y releases.
+
+ARQUITECTURA DOCUMENTAL TRANSVERSAL
+
+15.0 Repositorio mínimo Fase IDefine repositorio de arranque.
+
+15.1 Nomenclatura documentalOrdena archivos.
+
+15.2 VersionadoControla cambios.
+
+15.3 Control de cambiosDocumenta modificaciones.
+
+15.4 Referencias cruzadasConecta documentos.
+
+15.5 Conservación documentalDefine resguardo.
+
+15.6 CriticidadClasifica prioridad.
+
+15.7 Publicación y accesoDefine visibilidad.
+
+15.8 Evidencia documentalDefine prueba.
+
+15.9 Árbol oficial de dependenciasGobierna el sistema.
+
+15.10 Documentos obsoletosEvita uso de versiones superadas.
+
+15.11 Fuente, derivado y documento de faseClasifica documentos.
+
+15.12 Uso de IAEvita alucinación y redacción no desbloqueada.
+
+15.13 Validación humanaDefine revisión técnica, jurídica y operativa.
+
+15.14 Registro de decisiones documentalesPreserva memoria.
+
+15.15 Manifiesto documentalLista documentos, estado y fase.
+
+15.16 Grafo de dependenciasRepresenta precedencia.
+
+15.17 Tablero de estado documentalMide avance.
+
+15.18 Ramas, releases y archivo en GitOrdena trabajo.
+
+15.19 Trazabilidad fragmento-documentoMapea SMGIP final a árbol.
+
+15.20 No generación sustantiva sin mapeo previoRegla anti-alucinación.
+
+Dependencias: 0.1–0.16.Fase I: 15.0–15.3, 15.8, 15.9, 15.12, 15.15–15.17, 15.19, 15.20.Fase II: 15.4–15.7, 15.10, 15.11, 15.13, 15.18.Habilita: uso correcto de IA, Git, versionado y trazabilidad.
+
+ONTOLOGÍA Y SEMÁNTICA OFICIAL
+
+16.0 Catálogo mínimoEntidades, estados y eventos para Fase I.
+
+16.1 Diccionario oficial SMGIPLenguaje operativo.
+
+16.2 Entidades reguladasTutores, criadores, asociaciones, prestadores, visitantes.
+
+16.3 Actores institucionalesMunicipio, MVZ, ONGs, UCR, inspección, comités.
+
+16.4 Eventos operativosRegistro, captura, vacunación, esterilización, egreso.
+
+16.5 Estados y transicionesPrealta, alta, observación, custodia, retorno, sanción.
+
+16.6 Taxonomía territorialZonas, cuadrantes, microzonas.
+
+16.7 Taxonomía de riesgoSanitario, conductual, reproductivo, territorial.
+
+16.8 Taxonomía clínicaProcedimientos y estados.
+
+16.9 Taxonomía financieraIngresos, subsidios, copagos, ventanas.
+
+16.10 Redefinición semánticaControla cambios de términos.
+
+16.11 Puertas de entrada al sistemaCampaña, clínica, inspección, criador, asociación, visitante, pet friendly.
+
+16.12 Actores regularizables, condicionados, no aptosRegula transición.
+
+16.13 Visitantes y movilidad temporalDefine estancias.
+
+16.14 Fuentes de reposiciónReproducción, abandono, venta, cesión informal.
+
+16.15 Estatus documental por faseE0–E5.
+
+16.16 Recursos externos y cofinanciaciónDefine aportes.
+
+16.17 Taxonomía CNVRCapturado, intervenido, vacunado, registrado, apto, retornado, no apto, UCR, seguimiento.
+
+Dependencias: 0.5, 0.8, 0.13, 0.14, 3.1–3.3.Fase I: 16.0, 16.1, 16.4, 16.5, 16.11, 16.14–16.17.Fase II: 16.2, 16.3, 16.6–16.9, 16.12, 16.13.Habilita: RUAM, KPIs, inspección, auditoría, CNVR y trazabilidad.
+
+ARQUITECTURA TECNOLÓGICA
+
+17.0 MVP tecnológico RUAMSistema mínimo.
+
+17.1 InteroperabilidadConexión avanzada.
+
+17.2 Backend RUAMBase técnica.
+
+17.3 Móvil/campoUso territorial.
+
+17.4 Usuarios y autenticaciónControl de acceso.
+
+17.5 APIsInteroperabilidad institucional.
+
+17.6 GeorreferenciaciónTerritorio.
+
+17.7 QR y validaciónConsulta visible.
+
+17.8 LogsTrazabilidad de acciones.
+
+17.9 Recuperación ante fallosContinuidad.
+
+17.10 Continuidad operativaOperación estable.
+
+17.11 Modo offlineCampo sin conectividad.
+
+17.12 CiberseguridadProtección.
+
+17.13 Lectores de microchipOperación de identidad.
+
+17.14 Accesos por rol y datos personalesPrivacidad.
+
+17.15 Bitácora digitalAuditoría.
+
+17.16 Integración con clínicas, UCR, inspección, asociaciones, hoteles y pet friendlyEscalabilidad.
+
+17.17 Reporte público y tablero básicoTransparencia.
+
+17.18 Respaldo y conservaciónSeguridad de datos.
+
+17.19 Registro georreferenciado CNVRPuntos de captura y retorno.
+
+17.20 Seguimiento digital CNVRVerificación territorial.
+
+Dependencias: 3.1–3.20, 15.0–15.20, 16.0–16.17.Fase I: 17.0, 17.4, 17.8, 17.13, 17.14, 17.17–17.20.Fase II: 17.2, 17.3, 17.6, 17.7, 17.11, 17.15, 17.16.Fase III: 17.1, 17.5, 17.9, 17.10, 17.12.Habilita: RUAM, campo, CNVR georreferenciado, auditoría digital e interoperabilidad.
+
+ARQUITECTURA EPIDEMIOLÓGICA
+
+18.0 Línea base mínimaPunto de partida.
+
+18.1 Modelo poblacionalDinámica de población.
+
+18.2 Estimación poblacionalMetodología.
+
+18.3 Zonificación epidemiológicaTerritorio por riesgo.
+
+18.4 Densidad y reposiciónModelo avanzado.
+
+18.5 Vigilancia de zoonosisSalud pública.
+
+18.6 MordedurasRiesgo y seguridad.
+
+18.7 AbandonoEntrada poblacional.
+
+18.8 Reincidencia territorialZonas persistentes.
+
+18.9 Priorización de intervenciónDónde actuar primero.
+
+18.10 Contingencia epidemiológicaEmergencias.
+
+18.11 Cachorros y fuentes de reposiciónIndicador estructural.
+
+18.12 Visitantes y movilidad temporalRiesgo turístico.
+
+18.13 Cobertura vacunal y esterilizaciónMedición sanitaria.
+
+18.14 Animales comunitarios y retorno territorialMide población CNVR.
+
+18.15 Presión sobre UCR, asociaciones y servicios veterinariosMide saturación.
+
+18.16 CNVR y reposición territorialEvalúa impacto.
+
+18.17 Evaluación pre y post CNVRMide resultados.
+
+Dependencias: 3.1–3.20, 6.1–6.20, 11.1–11.20, 23.1–23.17.Fase I: 18.0, 18.2, 18.3, 18.5–18.7, 18.9, 18.11, 18.13, 18.16, 18.17.Fase II: 18.1, 18.4, 18.8, 18.12, 18.14, 18.15.Habilita: priorización, CNVR, vigilancia, cierre de fase y control de reposición.
+
+RIESGO INSTITUCIONAL
+
+19.0 Matriz mínima de riesgos Fase IRiesgos iniciales.
+
+19.1 Riesgos operativosFallas de campo.
+
+19.2 Riesgos financierosDesvíos o insuficiencia.
+
+19.3 Riesgos jurídicosImpugnaciones.
+
+19.4 Riesgos reputacionalesCrisis públicas.
+
+19.5 Riesgos sanitariosZoonosis, brotes, mordeduras.
+
+19.6 Continuidad institucionalCambios de administración.
+
+19.7 Gestión de crisisRespuesta.
+
+19.8 Contingencias políticasPresiones.
+
+19.9 Colapso operativoEscenarios extremos.
+
+19.10 RecuperaciónCómo volver a operar.
+
+19.11 Captura por actoresONGs, asociaciones, criadores, proveedores, funcionarios o grupos políticos.
+
+19.12 Activación prematuraSanciones, QR, copagos, inspección.
+
+19.13 Ruptura microchip-RUAMPérdida de trazabilidad.
+
+19.14 Bienestar deficienteDaño institucional y ético.
+
+19.15 Simulación externaCriadores, asociaciones o pet friendly.
+
+19.16 Dependencia financieraDonantes o subsidios sin transición.
+
+19.17 Mal uso del CNVRCNVR como “esterilizar y soltar”.
+
+19.18 Retorno CNVR sin seguimiento o rechazo comunitarioRiesgo territorial y reputacional.
+
+Dependencias: 0.1–0.16, 2.6–2.16, 9.9–9.21, 14.4–14.17.Fase I: 19.0, 19.3–19.5, 19.11–19.14, 19.16–19.18.Fase II: 19.1, 19.2, 19.6–19.8, 19.15.Fase III: 19.9, 19.10.Habilita: blindaje, continuidad, CNVR responsable y manejo de crisis.
+
+CALIDAD
+
+20.1 Sistema de calidad institucionalEstructura general.
+
+20.2 Indicadores de conformidadQué se cumple.
+
+20.3 No conformidadesRegistro de fallas.
+
+20.4 Acciones correctivas y preventivasCorrección.
+
+20.5 Auditoría de procesosRevisión operativa.
+
+20.6 Auditoría documentalRevisión de documentos.
+
+20.7 Auditoría clínicaRevisión veterinaria.
+
+20.8 Auditoría territorialRevisión por zona.
+
+20.9 Auditoría de bienestarRevisión ética y operativa.
+
+20.10 Auditoría financieraRevisión de recursos.
+
+20.11 No conformidad crítica por bienestarFalla grave.
+
+20.12 Ruptura RUAM/microchipFalla de trazabilidad.
+
+20.13 Conflicto de interés o capturaFalla institucional.
+
+20.14 Uso indebido de recursos externosFalla financiera.
+
+20.15 Campaña no cargada a RUAMFalla operativa.
+
+20.16 Egreso, venta, adopción o transferencia sin trazabilidadFalla de cierre.
+
+20.17 Retorno CNVR sin criterio técnicoFalla CNVR.
+
+20.18 Omisión CNVR de vacuna, esterilización, registro o evaluaciónFalla CNVR crítica.
+
+Dependencias: 11.0–11.20, 15.0–15.20.Fase I: criterios mínimos de no conformidad.Fase II: sistema operativo.Fase III: auditoría integral.Habilita: mejora continua, suspensión, corrección y madurez.
+
+DATOS Y ANALÍTICA
+
+21.1 Gobernanza de datosControl general.
+
+21.2 Calidad de datosConsistencia.
+
+21.3 Modelos analíticosAnálisis.
+
+21.4 KPIs estratégicosDecisión directiva.
+
+21.5 KPIs tácticosGestión intermedia.
+
+21.6 KPIs operativosCampo.
+
+21.7 Dashboard ejecutivoCabildo/rectoría.
+
+21.8 Dashboard territorialZonas.
+
+21.9 Dashboard clínicoMVZ y campañas.
+
+21.10 Modelos predictivosFase avanzada.
+
+21.11 Detección de anomalíasFraude, duplicidad, desviaciones.
+
+21.12 Inteligencia territorialDecisión basada en datos.
+
+21.13 Reposición poblacionalControl estructural.
+
+21.14 Cofinanciación, subsidios y copagosAnálisis financiero.
+
+21.15 Visitantes, turismo y pet friendlyAnálisis económico-territorial.
+
+21.16 Ruptura de trazabilidad y prealtas vencidasControl RUAM.
+
+21.17 Bienestar, complicaciones y no conformidadesCalidad.
+
+21.18 Desempeño por actor acreditadoControl de red.
+
+21.19 Analítica CNVRCaptura, retorno, no retorno, seguimiento, reincidencia e impacto.
+
+Dependencias: 3.1–3.20, 11.0–11.20, 17.0–17.20, 18.0–18.17.Fase I: captura útil para análisis posterior.Fase II: dashboards básicos.Fase III: analítica avanzada.Habilita: priorización, auditoría, CNVR, control de reposición y cierre.
+
+ECOSISTEMA REGULADO EXTERNO
+
+22.0 Mapa mínimo de actores externosIdentifica actores.
+
+22.1 CriadoresLicencia y control.
+
+22.2 ComercializaciónVenta, cesión y publicidad.
+
+22.3 Asociaciones y refugiosRegistro, capacidad y egreso.
+
+22.4 Pet friendlyAcreditación real.
+
+22.5 Hoteles y guarderíasCustodia temporal.
+
+22.6 Transporte animalMovilidad segura.
+
+22.7 Paseadores y adiestradoresServicios regulados.
+
+22.8 VisitantesMovilidad temporal.
+
+22.9 Adopción y transferenciaCambio de responsabilidad.
+
+22.10 Publicidad y promoción animalEvita venta informal.
+
+22.11 Tecnificación ética de criadoresRegularización asistida.
+
+22.12 Separación criador–MVZ–autoridadEvita conflicto de interés.
+
+22.13 Regularización de asociacionesAcompañamiento.
+
+22.14 Acreditación pet friendlyVerificación.
+
+22.15 Registro temporal de visitantesAlta temporal.
+
+22.16 Egreso, cesión, venta y transferencia con RUAMTrazabilidad.
+
+22.17 Actor regularizable, condicionado, no apto y sancionableClasificación.
+
+22.18 Publicidad de criadores, adopciones, ventas y serviciosControl de mercado.
+
+22.19 Pérdida, suspensión o revocaciónConsecuencia.
+
+22.20 Participación comunitaria en CNVRSin sustituir autoridad.
+
+22.21 Alimentadores o cuidadores comunitarios vinculados a CNVRReconoce rol sin crear tutor informal automático.
+
+Dependencias: 1.1–1.6, 3.1–3.20, 5.1–5.19, 8.1–8.17, 10.1–10.19, 12.1–12.18.Fase I: 22.0, 22.11 preliminar, 22.13 preliminar, 22.15 preliminar, 22.16 mínima, 22.17 preliminar, 22.20, 22.21.Fase II: 22.1–22.10, 22.12, 22.14, 22.18, 22.19.Habilita: cierre de reposición, pet friendly, asociaciones, criadores, visitantes y CNVR comunitario.
+
+ARQUITECTURA TERRITORIAL
+
+23.1 División territorial operativaBase territorial.
+
+23.2 Cuadrantes y microzonasUnidad de intervención.
+
+23.3 Índice de prioridad territorialOrden de atención.
+
+23.4 Rutas de captura y atenciónCampo.
+
+23.5 Cobertura sanitaria territorialVacunación, esterilización, registro.
+
+23.6 Mapa de reincidenciaZonas repetidas.
+
+23.7 Mapa de riesgo conductualAgresiones.
+
+23.8 Mapa de conflictividad comunitariaTensión social.
+
+23.9 Infraestructura críticaRecursos.
+
+23.10 Expansión territorialCrecimiento.
+
+23.11 Corredores turísticos y movilidad temporalTurismo.
+
+23.12 Presión sobre UCR, asociaciones y servicios veterinariosSaturación.
+
+23.13 Fuentes de reposición y cachorros en vía públicaReproducción.
+
+23.14 Establecimientos pet friendlyEconomía regulada.
+
+23.15 Campañas, cobertura, rezago y no conformidadesSeguimiento.
+
+23.16 Animales comunitarios y retorno territorialBase CNVR.
+
+23.17 Mapa CNVRCaptura, intervención, retorno, no retorno, seguimiento y reincidencia.
+
+Dependencias: 6.1–6.20, 18.0–18.17, 21.1–21.19.Fase I: 23.1–23.3, 23.5, 23.11, 23.13, 23.15–23.17.Fase II: 23.4, 23.6–23.8, 23.12, 23.14.Fase III: 23.9, 23.10.Habilita: campañas, CNVR, priorización y transición.
+
+POLÍTICA Y LEGITIMIDAD
+
+24.1 Sostenibilidad políticaViabilidad.
+
+24.2 Gestión interadministrativaContinuidad.
+
+24.3 Continuidad transexenalNo depender de administración.
+
+24.4 Transparencia públicaConfianza.
+
+24.5 Participación ciudadanaIntegración.
+
+24.6 ControversiasManejo.
+
+24.7 Activismo y conflictoPrevención.
+
+24.8 Reportes públicosRendición de cuentas.
+
+24.9 Indicadores públicos de impactoLegitimidad.
+
+24.10 Crisis reputacionalRespuesta.
+
+24.11 Adopción institucional con ONGs, academia y cabildoRuta política.
+
+24.12 Blindaje frente a captura política o electoralProtección.
+
+24.13 Narrativa Fase I, II y IIIClaridad pública.
+
+24.14 Legitimidad por evidenciaNo por vocería personal.
+
+24.15 Participación social sin sustitución de autoridadEvita captura.
+
+24.16 Resistencia de criadores, asociaciones, prestadores o tutores evasivosGestión política.
+
+24.17 Legitimidad CNVRDefiende retorno técnico ante comunidad, turismo y protección animal.
+
+Dependencias: 11.0–11.20, 12.1–12.18, 19.0–19.18.Fase I: 24.4, 24.11–24.15, 24.17.Fase II: 24.1, 24.5–24.9, 24.16.Fase III: 24.2, 24.3, 24.10.Habilita: continuidad y aceptación institucional.
+
+FINANZAS AVANZADAS
+
+25.1 Costeo unitarioCosto por intervención.
+
+25.2 Costeo territorialCosto por zona.
+
+25.3 Costeo clínicoProcedimientos.
+
+25.4 Costeo de inspecciónCumplimiento.
+
+25.5 Costeo UCRCustodia.
+
+25.6 Modelos actuarialesProyección.
+
+25.7 AutosostenibilidadEscenarios.
+
+25.8 Simulación presupuestalPlaneación.
+
+25.9 Antifraude financieroControl.
+
+25.10 Auditoría de subsidios y copagosRevisión.
+
+25.11 Cofinanciación por ventanaCosto por línea.
+
+25.12 Microchip, lectores, software y RUAMInfraestructura.
+
+25.13 Tecnificación y regularizaciónActores.
+
+25.14 Retorno social, sanitario y territorial de inversiónDefensa pública.
+
+25.15 Costeo de bienestar y correccionesNo conformidades.
+
+25.16 Auditoría externa e impactoEvaluación.
+
+25.17 Transición financiera entre fasesDel subsidio al sostenimiento.
+
+25.18 Costeo avanzado CNVRTerritorio e impacto esperado.
+
+Dependencias: 9.1–9.21, 21.1–21.19.Fase I: estimaciones preliminares.Fase II: costeo operativo.Fase III: autosostenibilidad y antifraude.Habilita: sostenibilidad avanzada.
+
+IMPLEMENTACIÓN REAL
+
+26.1 PMO del proyectoGestión de implementación.
+
+26.2 Roadmap maestroRuta general.
+
+26.3 Cronograma de madurezSecuencia.
+
+26.4 Plan pilotoArranque territorial.
+
+26.5 EscalamientoExpansión.
+
+26.6 Adopción institucionalEntrada a municipio.
+
+26.7 Transición asistencial-regulatoriaCambio de lógica.
+
+26.8 Cierre de faseValidación.
+
+26.9 Readiness operacionalPreparación.
+
+26.10 Modelo MIVSNúcleo mínimo.
+
+26.11 Desbloqueo documentalOrden de escritura.
+
+26.12 Capacidad operativa por faseQué puede hacerse.
+
+26.13 “No activar antes de”Reglas de bloqueo.
+
+26.14 Iteración y revisiónActualización.
+
+26.15 Git con revisión humanaUso controlado.
+
+26.16 Validación por documentoTécnica, jurídica, operativa y financiera.
+
+26.17 Arranque de Fase ICriterios.
+
+26.18 Activación de Fase IICriterios.
+
+26.19 Declaración de Fase IIICriterios.
+
+26.20 Documentos mínimos, completos y derivados por faseOrden.
+
+26.21 Mapeo inicial desde SMGIP final hacia 0–29Ingeniería inversa.
+
+26.22 Activación CNVR pilotoCriterios mínimos.
+
+26.23 Escalamiento CNVR territorialCriterios de madurez.
+
+Dependencias: módulos críticos mínimos.Fase I: 26.1–26.4, 26.7, 26.9–26.11, 26.13, 26.15, 26.17, 26.20–26.22.Fase II: 26.5, 26.6, 26.8, 26.12, 26.14, 26.16, 26.18, 26.23.Fase III: 26.19.Habilita: implementación real.
+
+MIVS — NÚCLEO IMPLEMENTABLE REAL
+
+27.1 Reglamento mínimo viableBase legal inicial.
+
+27.2 RUAM mínimo viableRegistro mínimo.
+
+27.3 Registro básico territorialLínea base.
+
+27.4 Red MVZ inicialOperación clínica.
+
+27.5 Campañas trazablesIntervención inicial.
+
+27.6 Protocolo clínico unificadoCalidad mínima.
+
+27.7 UCR mínima operativaCustodia básica.
+
+27.8 Subsidio inicial controladoAcceso.
+
+27.9 KPIs mínimosMedición.
+
+27.10 Auditoría mínima viableControl.
+
+27.11 Comité rector básicoGobernanza.
+
+27.12 Inspección limitada inicialVerificación sin sanción plena.
+
+27.13 Microchip y prealtaIdentidad.
+
+27.14 Checklist mínimo de bienestarValidez.
+
+27.15 Cofinanciación mínimaRecursos externos trazables.
+
+27.16 Formatos mínimosOperación.
+
+27.17 Repositorio mínimoVersionado.
+
+27.18 Mapa de actores externosRegularización futura.
+
+27.19 Criterios para declarar Fase IReadiness.
+
+27.20 Comunicación mínimaAdhesión.
+
+27.21 Protección de datosPrivacidad.
+
+27.22 No activación prematuraBloqueos.
+
+27.23 CNVR mínimo viableCNVR piloto.
+
+27.24 Retorno y no retorno CNVRCriterios.
+
+27.25 Formatos mínimos CNVRInstrumentos.
+
+Dependencias: 0–14, 15, 16, 17, 19, 22, 23, 26, 28 en versión mínima.Fase I: completo en versión mínima si CNVR se activa.Habilita: arranque real.
+
+FORMATOS E INSTRUMENTOS
+
+28.1 Consentimientos28.2 Actas28.3 Licencias28.4 Certificados28.5 Constancias28.6 Bitácoras28.7 Checklist clínicos28.8 Checklist de inspección28.9 Captura / registro28.10 Egreso28.11 Adopción28.12 Devolución28.13 Sanción28.14 Financiero28.15 Prealta y microchip28.16 Expediente clínico de campaña28.17 Checklist de bienestar28.18 Aportación ONG o aliado28.19 Control de insumos y recursos en especie28.20 Declaración de intereses y recusación28.21 Transferencia de tutor o custodia28.22 Visitante / alta temporal28.23 Tecnificación ética de criadores28.24 Regularización de asociaciones28.25 Acreditación pet friendly28.26 Reporte público mínimo28.27 No conformidad28.28 Auditoría mínima viable28.29 Control de versiones y decisión documental28.30 Cierre de fase o transición28.31 Captura CNVR28.32 Valoración CNVR28.33 Retorno territorial CNVR28.34 No retorno CNVR28.35 Seguimiento CNVR28.36 Checklist de bienestar CNVR28.37 Bitácora territorial CNVR
+
+Dependencias: documentos 1–27.Fase I: formatos mínimos y CNVR si aplica.Fase II: licencias, inspección, adopción, transferencia, pet friendly y visitantes.Fase III: sanción plena.Habilita: operación documentada.
+
+REPOSITORIO INSTITUCIONAL
+
+29.0 Repositorio mínimo de trabajoArranque.
+
+29.1 Repositorio maestro documentalSistema completo.
+
+29.2 Historial de versionesMemoria.
+
+29.3 Registro de cambiosControl.
+
+29.4 Biblioteca normativaLeyes y reglamentos.
+
+29.5 Biblioteca técnicaFuentes.
+
+29.6 Biblioteca clínicaProtocolos.
+
+29.7 Biblioteca epidemiológicaDatos.
+
+29.8 Biblioteca jurídicaDictámenes.
+
+29.9 Biblioteca de auditoríasRevisión.
+
+29.10 Incidentes y lecciones aprendidasMejora.
+
+29.11 Fuentes convertidas en requisitosTrazabilidad técnica.
+
+29.12 Decisiones y criterios institucionalesMemoria decisional.
+
+29.13 Outputs derivados por audiencia y faseONGs, cabildo, ciudadanía, campo.
+
+29.14 Documentos obsoletosArchivo.
+
+29.15 Versiones por faseRelease.
+
+29.16 Convenios y cofinanciaciónRecursos.
+
+29.17 No conformidades y acciones correctivasCalidad.
+
+29.18 Evidencia pública y reportes de impactoTransparencia.
+
+29.19 Fragmentos fuente del SMGIP finalIngeniería inversa.
+
+29.20 Biblioteca CNVREvidencia, mapas, retornos, no retornos y seguimiento.
+
+Dependencias: 15.0–15.20, 0.8.Fase I: 29.0, 29.2, 29.3, 29.11, 29.12, 29.15, 29.19, 29.20 si CNVR se activa.Fase II: 29.1, 29.4–29.8, 29.13, 29.16, 29.17.Fase III: 29.9, 29.10, 29.14, 29.18.Habilita: memoria institucional y continuidad.
+
+VIII. REGLAS CRÍTICAS DE CIERRE PREMATURO
+
+No iniciar inspección plena sin:1.1–1.62.1–2.103.1–3.205.1–5.198.1–8.17formatos correspondientes
+
+No iniciar QR obligatorio sin:3.1–3.2016.0–16.1717.0–17.20protección de datosconsulta pública limitadacorrección de datosreposición o revocación
+
+No iniciar sanciones reproductivas plenas sin:1.1–1.68.1–8.1722.1, 22.2, 22.11, 22.12, 22.16, 22.17, 22.18, 22.19programa de tecnificación éticacomunicación previaruta de regularización
+
+No iniciar CNVR formal sin:0.13, 0.141.15, 1.162.15, 2.163.18–3.204.16, 4.175.17–5.196.17–6.207.16, 7.178.16, 8.1711.19, 11.2014.16, 14.1718.16, 18.1723.1727.23–27.2528.31–28.37
+
+Regla CNVR innegociable:Ningún retorno CNVR será válido si no existe evaluación clínica, vacunación, esterilización cuando proceda, identificación por microchip o prealta justificada, registro RUAM, evaluación conductual, punto georreferenciado, criterio territorial, bienestar mínimo, decisión documentada y seguimiento definido.
+
+No iniciar autosostenibilidad sin:9.1–9.2125.1–25.18auditoría financiera activacopago regladosubsidio focalizadofuentes de ingreso establescosteo unitario realtrazabilidad de ingresos y egresos
+
+No declarar bienestar formalizado sin:5.1–5.19checklists por móduloindicadores de bienestarconsecuencias por incumplimientoauditoría de bienestarformato de no conformidadcapacidad de suspensión o corrección
+
+No declarar regulación pet friendly plena sin:22.4–22.8, 22.14, 22.153.1–3.208.1–8.1712.1213.2, 13.11formatos de acreditación, inspección, incidente y alta temporal
+
+No declarar control de criadores sin:22.1, 22.2, 22.11, 22.12, 22.16–22.1810.98.93.155.13programa de tecnificación éticalicencia provisional condicionadaruta de inspeccióncriterios de exclusión y sanción
+
+No declarar cofinanciación regulada sin:9.9–9.2113.10, 13.1528.18, 28.1911.1019.11, 19.16política de rechazo de aportes condicionadosreporte financiero mínimo
+
+No declarar cierre regulatorio sin:cobertura territorial verificablemicrochip/RUAM operativoauditoría funcionalKPIs establesfinanciamiento sostenidocapacidad institucional instaladasubsidio controladocontrol de criadores y reproducción informalecosistema externo reguladobienestar animal auditableCNVR auditado cuando existarepositorio institucional vigentecapacidad de corrección, suspensión y sanción efectiva
+
+IX. CIERRE CONCEPTUAL
+
+Este árbol no describe papeles. Describe la manera en que una política pública compleja se vuelve escribible, implementable, auditable y defendible.
+
+Su lógica es:
+
+Documento maestro → fragmentación → núcleo rector → dependencias → fase mínima → operación controlada → auditoría → transición → regulación → exigibilidad plena.
+
+La IA no debe usar este árbol como lista de temas. Debe usarlo como mapa de restricciones.
+
+Git no debe usarse solo como almacenamiento. Debe usarse como sistema de memoria institucional, versionado, trazabilidad y control de cambios.
+
+El SMGIP no se escribe de una vez. Se descompone desde su documento final, se reconstruye por dependencias y se activa por fases.
